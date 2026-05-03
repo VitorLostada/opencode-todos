@@ -9,14 +9,12 @@
   ],
   "type": "module",
   "exports": {
-    "./opencode-todos": {
-      "types": "./dist/opencode-todos.d.ts",
-      "import": "./dist/opencode-todos.js"
+    "./tui": {
+      "types": "./dist/tui.d.ts",
+      "import": "./dist/tui.js"
     }
   },
   "scripts": {
-    "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check",
     "build": "bun run scripts/build.ts",
     "typecheck": "bun x tsc -p tsconfig.json",
     "test": "bun test"
