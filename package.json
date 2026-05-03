@@ -1,6 +1,6 @@
 {
   "name": "opencode-todos",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "/todos plugin for OpenCode TUI.",
   "license": "MIT",
   "files": [
@@ -9,26 +9,28 @@
   ],
   "type": "module",
   "exports": {
-    "./tui": {
-      "config": {
-        "storageScope": "global"
-      },
-      "types": "./dist/tui.d.ts",
-      "import": "./dist/tui.js"
+    "./opencode-todos": {
+      "types": "./dist/opencode-todos.d.ts",
+      "import": "./dist/opencode-todos.js"
     }
   },
   "scripts": {
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
     "build": "bun run scripts/build.ts",
-    "typecheck": "bun x tsc -p tsconfig.json"
+    "typecheck": "bun x tsc -p tsconfig.json",
+    "test": "bun test"
   },
   "dependencies": {
     "@opencode-ai/plugin": "1.4.7",
     "@opentui/solid": "0.1.97",
-    "solid-js": "^1.9.9"
+    "solid-js": "^1.9.9",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@opentui/core": "0.1.97",
     "@types/bun": "latest",
+    "oxfmt": "^0.46.0",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
