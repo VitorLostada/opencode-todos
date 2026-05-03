@@ -1,6 +1,6 @@
 {
   "name": "opencode-todos",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "/todos plugin for OpenCode TUI.",
   "license": "MIT",
   "files": [
