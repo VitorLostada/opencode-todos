@@ -6,7 +6,7 @@ import { createSolidTransformPlugin } from "@opentui/solid/bun-plugin";
 await rm("dist", { recursive: true, force: true });
 
 const build = await Bun.build({
-  entrypoints: ["./src/tui.tsx"],
+  entrypoints: ["./src/opencode-todos.tsx"],
   outdir: "./dist",
   target: "bun",
   format: "esm",
