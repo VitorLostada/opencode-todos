@@ -38,9 +38,13 @@ Run `/todos` from the OpenCode TUI command palette or slash command input.
 - `-- TODO: ...`
 - `; TODO: ...`
 
+## Supported Languages
+
+Ada, Astro, C, C++, C#, Clojure, Crystal, CSS, Dart, Elm, Elixir, Go, Groovy, GraphQL, Haskell, HTML, INI, Java, JSON/JSONC, Julia, Kotlin, Lua, Nim, Nix, Objective-C, Perl, PHP, Prisma, Protobuf, Python, R, Raku, Reason, ReScript, Ruby, Rust, Scala, SCSS, Shell, Solidity, SQL, Starlark, Svelte, SVG, Swift, Terraform, TOML, TypeScript, V, Vue, XML, YAML, Zig, Zsh — plus `Dockerfile` and `Makefile`.
+
 ## Scanning Rules
 
-The scanner reads common source and config file extensions plus `Dockerfile` and `Makefile`. It skips large files over 1 MiB and ignores generated or dependency directories such as `.git`, `.opencode`, `dist`, `build`, `coverage`, and `node_modules`.
+The scanner reads source and config file extensions for all supported languages plus `Dockerfile` and `Makefile`. It skips large files over 1 MiB and ignores generated or dependency directories such as `.git`, `.opencode`, `dist`, `build`, `coverage`, and `node_modules`.
 
 The plugin refuses to scan the filesystem root.
 
