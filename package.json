@@ -1,6 +1,6 @@
 {
   "name": "opencode-todos",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "/todos plugin for OpenCode TUI.",
   "license": "MIT",
   "files": [
@@ -20,20 +20,20 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@opencode-ai/plugin": "1.4.7",
-    "@opentui/solid": "0.1.97",
-    "solid-js": "^1.9.9",
+    "@opencode-ai/plugin": "1.14.41",
+    "@opentui/solid": "0.2.5",
+    "solid-js": "1.9.12",
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@opentui/core": "0.1.97",
+    "@opentui/core": "0.2.5",
     "@types/bun": "latest",
     "oxfmt": "^0.46.0",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@opentui/core": ">=0.1.97",
-    "@opentui/solid": ">=0.1.97"
+    "@opentui/core": ">=0.2.5",
+    "@opentui/solid": ">=0.2.5"
   },
   "peerDependenciesMeta": {
     "@opentui/core": {
